@@ -37,6 +37,11 @@ v0.0.4
     <Compile Include="..\..\shared\Guard.cs" Link="Guard.cs" />
   </ItemGroup>
 
+  <ItemGroup Condition="
+    '$(Configuration)' == 'Debug'">
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Update="QowaivValidationMessages.Designer.cs">
       <DesignTime>True</DesignTime>
